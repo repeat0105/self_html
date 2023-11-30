@@ -1,0 +1,292 @@
+/* index.css */
+
+@import url("reset.css");
+
+main {
+    margin-left: 100px;
+}
+
+.spot {
+    width: 1536px;
+    height: 626px;
+    max-width: 2560px;
+    background: url("../img/CON1.jpg"),lightgray 50% / cover no-repeat;
+    
+    color: #5E452D;      
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;    
+    text-align: center;     
+
+    line-height: 87px;
+}
+
+.spot > b { 
+    font-size: 2rem;
+    transition: 1s;
+}
+.spot > b:hover {
+    letter-spacing: 20px; 
+    
+}
+/* 글자간 간격을준다 */
+.spot > p {
+    font-size: 1rem;
+} 
+
+.spot > p:nth-child(3) {
+    text-decoration: underline;
+}
+
+
+/* 돋보기 */
+.material-symbols-outlined {
+font-variation-settings:
+'FILL' 0,
+'wght' 400,
+'GRAD' 0,
+'opsz' 24,
+}
+
+header {
+    margin-left: 100px;
+    padding: 40px  7% 40px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #58412A;
+}
+
+header > h1 {
+}
+header > h1 > a {
+    font-size: 24px;
+}
+header > nav > a:hover {
+    text-decoration: line-through;
+}
+header> nav > a{
+    font-size: 16px;
+    padding: 16px 13px;
+}
+header > div {}
+
+header > div > a{
+    border: 1px solid rgba(255,255,255,0.4);
+    padding: 7px 0px 3px 7px;
+    transition:  1s;
+}
+header > div > a:hover {
+    background-color: aquamarine;
+}
+
+/* ======================================================= */
+
+.title-2 {
+    margin-left: 100px;
+    margin-top: 126px;
+    margin-bottom: 62px;
+}
+
+.news-list {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 62px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.news-list > figure {
+    width: 353px; height: 442px;
+
+    position: relative;
+}
+.news-list > figure > p {
+    /* overflow:hidden; */
+}
+.news-list > figure > p > img {
+    width: 100%;
+
+    transition: 0.55s;
+    vertical-align: middle;
+    /* flex-shrink: 1; */
+}
+.news-list > figure:hover > p > img {
+    transform: scale(1.2);
+}
+/* 382 191 abs op0 1*/
+.news-list > figure > figcaption {
+    background-color: rgba(238,231,225,1);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 191;
+
+    width: 100%;
+
+    transition: 0.55s;
+    vertical-align: middle;
+
+    font-size: 16px;
+
+    border-radius: 20px;
+
+    color:#5E452D;
+    padding: 142px 22px 34px 22px;
+
+    position: absolute;
+    top: 0px;
+    transform: translateY(-100%);
+    transition: 1s;
+    opacity: 0;
+}
+
+.news-list > figure:hover  > figcaption {
+    transform: scale(1.2);
+
+    opacity: 1;
+}
+.news-list > figure > figcaption > span{
+    font-size: 26px;
+    margin-bottom: 10px;
+
+    
+}
+
+/* ======================================================= */
+
+.swiper {
+    margin-left: 100px;
+    margin-top: 165px;
+    margin-right: 100px;
+}
+
+.swiper > .swiper-wrapper {}
+
+.swiper-slide {
+    display: flex;
+    justify-content: space-between;
+}
+.swiper > .swiper-wrapper > .swiper-slide {}
+
+.swiper > .swiper-wrapper > .swiper-slide >img {
+    width:768px; height:888px;
+}
+.swiper > .swiper-wrapper > .swiper-slide > figcaption {
+    margin: 100px;
+    margin-top: 150px;
+    color: #58412A;
+
+    /* text-align: right; */
+}
+.swiper > .swiper-wrapper > .swiper-slide > figcaption > h1 {
+    line-height: 87px;
+    font-size: 52px;
+}
+.swiper > .swiper-wrapper > .swiper-slide > figcaption > p {
+
+}
+.swiper > .swiper-wrapper > .swiper-slide > figcaption > p::before {
+    content:'';
+    width: 6px;height:17px; border-radius: 100%;
+    background-color: #58412A;
+    display: inline-block;
+    margin-right: 10px;
+
+    transform: rotate(30deg);
+}
+
+.swiper > .swiper-wrapper > .swiper-slide > figcaption > p:nth-child(2) {
+    padding-top: 40px;
+    padding-bottom: 100px; 
+    font-size: 32px;
+}
+.swiper > .swiper-wrapper > .swiper-slide > figcaption > p:nth-child(3) {
+    line-height: 41px;
+    padding-bottom: 100px;
+    font-size: 24px;
+}
+.swiper > .swiper-wrapper > .swiper-slide > figcaption > p:nth-child(4) {
+    text-decoration: underline;
+    font-size: 32px;
+}
+
+
+.figcap {
+    text-align: right;
+}
+
+/* ======================================================= */
+
+.outside {
+    margin-top: 215px;
+
+    background-color: #EEE7E1;
+    
+    height: 339px;
+}
+.firstbtwin {
+    display: flex;
+    justify-content: space-between;
+    color: #58412A;
+}
+.outside > .firstbtwin{}
+
+.outside > .firstbtwin > .firstfigure {
+    margin-left: 200px;
+    margin-top: 200px;
+}
+.outside > .firstbtwin > .firstfigure > h3{
+    padding-bottom: 19px;
+}
+.outside > .firstbtwin > .firstfigure > p{
+    font-size: 12px;
+}
+
+
+
+.outside > .firstbtwin > .secondfigure {
+    font-size: 16px;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 57px;
+    margin-right: 200px;
+}
+
+.outside > .firstbtwin > .secondfigure > .firstdiv {
+    line-height: 30px;
+}
+.outside > .firstbtwin > .secondfigure > .firstdiv > p {
+    text-decoration: underline;
+}
+.outside > .firstbtwin > .secondfigure > .firstdiv > p:nth-child(1) {
+    padding-bottom: 20px;
+}
+
+.outside > .firstbtwin > .secondfigure > .secondiv {
+    padding: 0px 50px;
+    line-height: 28px;
+}
+.outside > .firstbtwin > .secondfigure > .secondiv > p{}
+.outside > .firstbtwin > .secondfigure > .secondiv > p:nth-child(1){
+    padding-bottom: 20px;
+    text-decoration: underline;
+}
+
+.outside > .firstbtwin > .secondfigure > .threediv {
+    line-height: 28px;
+}
+.outside > .firstbtwin > .secondfigure > .threediv > p{}
+.outside > .firstbtwin > .secondfigure > .threediv > p:nth-child(1){
+    padding-bottom: 20px;
+
+}
